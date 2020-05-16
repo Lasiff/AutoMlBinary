@@ -21,7 +21,11 @@ pip install sklearn
 а далее импортировать.
 
 ```
+import sys
 
+sys.path.append('/path/to/the/library/autoML')
+
+from autoMlBinary import AutoMlBinary 
 ```
 
 
