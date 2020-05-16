@@ -18,7 +18,7 @@ class RandomForestModelSearcher(ModelSearcherABC):
         self.cv = cv
 
     def compute_grid_search(self):
-        rfc = RandomForestClassifier(random_state=42)
+        rfc = RandomForestClassifier(random_state=self.seed)
         CV_rfc = GridSearchCV(estimator=rfc, param_grid=self.param_grid, cv=self.cv)
         CV_rfc.fit(self.X_train, self.y_train)
         best_params_rf = CV_rfc.best_params_
