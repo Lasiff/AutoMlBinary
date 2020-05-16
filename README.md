@@ -29,7 +29,7 @@ from autoMlBinary import AutoMlBinary
 ```
 
 
-### Пример использования библиотеки
+### Usage examples
 
 
 ```
